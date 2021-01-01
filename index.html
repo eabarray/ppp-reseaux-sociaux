@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Qui sommes-nous ?</title>
+    <meta name="description" content="Contenu de la page" />
+    <meta name="keywords" content="mots, clés" />
+    <link rel="stylesheet" href="lib/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="lib/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" media="screen" type="text/css" href="css/global.css" />
+</head>
+
+<body>
+    <div id="header">
+        <p>header</p>
+    </div>
+    <div id="menu">
+        <ul>
+            <li class="menu" id="menu1" title="page/quiSommesNous.html">menu1</li>
+            <li class="menu" id="menu2" title="page/quiSommesNous.html">menu2</li>
+            <li class="menu" id="menu3">menu3</li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="pages"></div>
+        <div id="sos" class="row">
+            <div class="col-lg-1">
+                <p>Numéros verts</p>
+                <p>harcèlement: 3232</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>footer</p>
+    </div>
+
+    <script>
+        <!-- Load the pages when click on menu 
+        -->
+        $('.menu').on("click",
+
+        function()
+
+        {
+
+        $("#pages").load($(this).attr('title'));
+
+        });
+
+
+
+
+    </script>
+</body>
