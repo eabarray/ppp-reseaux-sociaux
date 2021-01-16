@@ -18,10 +18,10 @@
     </div>
     <div id="menu">
         <ul>
-            <li class="menu" id="menu1">Accueil</li>
-            <li class="menu" id="menu2">Histoire</li>
-            <li class="menu" id="menu3">Positif</li>
-            <li class="menu" id="menu4">Négatif</li>
+            <li class="menu" id="menu1" title="page/accueil.html">Accueil</li>
+            <li class="menu" id="menu2" title="page/histoire.html">Histoire</li>
+            <li class="menu" id="menu3" title="page/positif.html">Positif</li>
+            <li class="menu" id="menu4" title="page/negatif.html">Négatif</li>
             <li class="menu" id="menu5" title="page/quiSommesNous.html">Qui sommes-nous</li>
         </ul>
     </div>
@@ -31,6 +31,7 @@
             <div class="col-lg-1">
                 <p>Numéros verts</p>
                 <p>harcèlement: 3232</p>
+                <p></p>
             </div>
         </div>
     </div>
@@ -50,6 +51,8 @@
         $("#pages").load($(this).attr('title'));
 
         });
+
+
 
 
 
